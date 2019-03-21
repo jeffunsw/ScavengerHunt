@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/heroYellow" >
+    android:background="@color/purple" >
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -16,37 +16,60 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/textView1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10sp"
             android:fontFamily="@font/kirang"
             android:gravity="center"
-            android:text="@string/name_screen_title"
+            android:text="@string/writing_intro_screen_title"
             android:textColor="@color/white"
             android:textSize="54sp" />
 
-        <EditText
+        <TextView
             android:id="@+id/textView2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="30sp"
+            android:layout_marginBottom="10sp"
             android:fontFamily="@font/kirang"
             android:gravity="center"
-            android:text="@string/name_screen_subtitle"
+            android:text="@string/results_screen_subtitle"
             android:textColor="@color/white"
-            android:textSize="28sp" />
+            android:textSize="36sp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10sp"
+            android:fontFamily="@font/kirang"
+            android:gravity="center"
+            android:text="@string/results_screen_message"
+            android:textColor="@color/white"
+            android:textSize="36sp" />
+
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/button1"
             style="@style/ButtonStyleGreen"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
-            android:text="@string/name_screen_button"
             android:fontFamily="@font/kirang"
-            android:textSize="30sp"
-            />
+            android:text="@string/results_screen_button1"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/button2"
+            style="@style/ButtonStyleGreen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@color/heroYellow"
+            android:fontFamily="@font/kirang"
+            android:text="@string/results_screen_button2"
+            android:textSize="30sp" />
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>
