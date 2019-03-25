@@ -29,7 +29,20 @@
             android:textSize="36sp" />
 
         <TextView
-            android:id="@+id/mathsQuestion"
+            android:id="@+id/mathsResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="Correct!"
+            android:textAlignment="center"
+            android:textSize="30dp"
+            android:textColor="@color/white"
+            android:padding="10dp"
+            android:layout_marginBottom="10dp" />
+
+        <TextView
+            android:id="@+id/mathsQuestion1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
@@ -39,55 +52,36 @@
             android:textSize="50dp"
             android:textColor="@color/white"
             android:padding="10dp"
+            android:layout_marginBottom="30dp"
+            />
+
+        <TextView
+            android:id="@+id/mathsAnswer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="= 25"
+            android:textAlignment="center"
+            android:textSize="30dp"
+            android:textColor="@color/white"
+            android:padding="10dp"
             android:layout_marginBottom="100dp"
             />
 
         <Button
-            android:id="@+id/mathsAnswerA"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="60dp"
-            android:layout_marginRight="60dp"
-            android:padding="10dp"
-            android:background="@drawable/rounded_purple"
-            android:text="Answer A"
-            android:textAlignment="center"
-            android:textSize="25dp"
-            android:textAllCaps="false"
-            android:textColor="@color/white"
-            android:layout_marginTop="10dp"
-            />
-
-        <Button
-            android:id="@+id/mathsAnswerB"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="60dp"
-            android:layout_marginRight="60dp"
-            android:background="@drawable/rounded_red"
-            android:padding="10dp"
-            android:text="Answer B"
-            android:textAlignment="center"
-            android:textSize="25dp"
-            android:textAllCaps="false"
-            android:textColor="@color/white"
-            android:layout_marginTop="10dp"
-             />
-
-        <Button
-            android:id="@+id/mathsAnswerC"
+            android:id="@+id/mathsNext"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="60dp"
             android:layout_marginRight="60dp"
             android:background = "@drawable/rounded"
             android:padding="10dp"
-            android:text="Answer C"
+            android:text="Next!"
             android:textAlignment="center"
             android:textSize="25dp"
             android:textAllCaps="false"
             android:textColor="@color/white"
-            android:layout_marginTop="10dp"
             />
 
     </LinearLayout>

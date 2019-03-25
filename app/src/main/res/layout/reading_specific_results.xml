@@ -15,80 +15,76 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-
         <TextView
-            android:id="@+id/button"
-            style="@style/ButtonStyleGreen"
+            android:id="@+id/textView1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            android:background="@color/heroYellow"
+            android:layout_marginBottom="10sp"
             android:fontFamily="@font/kirang"
-            android:text="@string/maths_intro_screen_title"
-            android:textSize="36sp" />
+            android:gravity="center"
+            android:text="@string/reading_intro_screen_title"
+            android:textColor="@color/white"
+            android:textSize="54sp" />
 
         <TextView
-            android:id="@+id/mathsQuestion"
+            android:id="@+id/readingResult"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
-            android:text="5 x 5"
+            android:text="Correct!"
             android:textAlignment="center"
-            android:textSize="50dp"
+            android:textSize="30dp"
+            android:textColor="@color/white"
+            android:padding="10dp"
+            android:layout_marginBottom="10dp" />
+
+        <TextView
+            android:id="@+id/readingQuestion2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="Jack wore red shoes to school. Mary wore purple shoes. What colour shoes did Jack wear?"
+            android:textAlignment="center"
+            android:textSize="25dp"
+            android:textColor="@color/white"
+            android:padding="10dp"
+            android:layout_marginBottom="40dp"
+
+            />
+
+        <TextView
+            android:id="@+id/readingAnswer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="Red"
+            android:textAlignment="center"
+            android:textSize="25dp"
             android:textColor="@color/white"
             android:padding="10dp"
             android:layout_marginBottom="100dp"
             />
 
-        <Button
-            android:id="@+id/mathsAnswerA"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="60dp"
-            android:layout_marginRight="60dp"
-            android:padding="10dp"
-            android:background="@drawable/rounded_purple"
-            android:text="Answer A"
-            android:textAlignment="center"
-            android:textSize="25dp"
-            android:textAllCaps="false"
-            android:textColor="@color/white"
-            android:layout_marginTop="10dp"
-            />
 
         <Button
-            android:id="@+id/mathsAnswerB"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="60dp"
-            android:layout_marginRight="60dp"
-            android:background="@drawable/rounded_red"
-            android:padding="10dp"
-            android:text="Answer B"
-            android:textAlignment="center"
-            android:textSize="25dp"
-            android:textAllCaps="false"
-            android:textColor="@color/white"
-            android:layout_marginTop="10dp"
-             />
-
-        <Button
-            android:id="@+id/mathsAnswerC"
+            android:id="@+id/readingNext"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="60dp"
             android:layout_marginRight="60dp"
             android:background = "@drawable/rounded"
             android:padding="10dp"
-            android:text="Answer C"
+            android:text="Next!"
             android:textAlignment="center"
             android:textSize="25dp"
             android:textAllCaps="false"
             android:textColor="@color/white"
             android:layout_marginTop="10dp"
             />
+
 
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>

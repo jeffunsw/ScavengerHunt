@@ -32,7 +32,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
-            android:text="Hi Tom! My name ____ is Jeffrey. What ___ beautiful day out today."
+            android:text="Hi Tom! My name ____ Jeffrey. What ___ beautiful day out today."
             android:textAlignment="center"
             android:textSize="25dp"
             android:textColor="@color/white"
@@ -51,6 +51,7 @@
             android:text="is, a"
             android:textAlignment="center"
             android:textSize="25dp"
+            android:textAllCaps="false"
             android:textColor="@color/white"
             android:layout_marginTop="10dp"
             />
@@ -66,6 +67,7 @@
             android:text="are, is"
             android:textAlignment="center"
             android:textSize="25dp"
+            android:textAllCaps="false"
             android:textColor="@color/white"
             android:layout_marginTop="10dp"
             />
@@ -81,6 +83,7 @@
             android:text="is, an"
             android:textAlignment="center"
             android:textSize="25dp"
+            android:textAllCaps="false"
             android:textColor="@color/white"
             android:layout_marginTop="10dp"
             />
