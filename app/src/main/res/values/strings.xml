@@ -3,4 +3,27 @@
     <string name="name_screen_title">HI THERE!</string>
     <string name="name_screen_subtitle">What\'s your name?</string>
     <string name="name_screen_button">Let\'s go!</string>
+    <string name="join_us_screen_title">Hello,___</string>
+    <string name="join_us_screen_message">Shh! My pirate friend told me there is hidden treasurer!&#13;&#10;&#13;&#10; Treasure1? Yes, treasure! &#13;&#10;&#13;&#10;Want to join us on an adventure? !</string>
+    <string name="join_us_screen_button">Continue</string>
+    <string name="greetings_screen_title">GREETINGS</string>
+    <string name="greetings_screen_message">Find all the pieces of the map.&#13;&#10;&#13;&#10; If you get all the questions correct you
+        \'ll get one step closer to the treasurer!</string>
+    <string name="greetings_screen_button">Let\'s start!</string>
+    <string name="writing_intro_screen_button">Writing</string>
+    <string name="maths_intro_screen_button">Maths</string>
+    <string name="reading_intro_screen_button">Reading</string>
+    <string name="open_treasure_screen_button">Open Treasure!</string>
+    <string name="treasure_chest_screen_title">THUD!</string>
+    <string name="treasure_chest_screen_message">You dig a hole on the ground.&#13;&#10;&#13;&#10;Thud! &#13;&#10;A treasure chest!</string>
+    <string name="treasure_chest_screen_button">Watch video!</string>
+    <string name="maths_intro_screen_title">MATHS</string>
+    <string name="writing_intro_screen_title">WRITING</string>
+    <string name="reading_intro_screen_title">READING</string>
+    <string name="results_screen_button1">View map!</string>
+    <string name="results_screen_button2">Next!</string>
+    <string name="results_screen_subtitle">Congratulations!</string>
+    <string name="results_screen_message">You got @ / 5 correct</string>
+
+
 </resources>

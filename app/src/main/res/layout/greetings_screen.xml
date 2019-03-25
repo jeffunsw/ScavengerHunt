@@ -22,7 +22,7 @@
             android:layout_marginBottom="10sp"
             android:fontFamily="@font/kirang"
             android:gravity="center"
-            android:text="@string/name_screen_title"
+            android:text="@string/greetings_screen_title"
             android:textColor="@color/white"
             android:textSize="54sp" />
 
@@ -33,7 +33,7 @@
             android:layout_marginBottom="30sp"
             android:fontFamily="@font/kirang"
             android:gravity="center"
-            android:text="@string/name_screen_subtitle"
+            android:text="@string/greetings_screen_message"
             android:textColor="@color/white"
             android:textSize="28sp" />
 
@@ -44,9 +44,8 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
-            android:text="@string/name_screen_button"
             android:fontFamily="@font/kirang"
-            android:textSize="30sp"
-            />
+            android:text="@string/greetings_screen_button"
+            android:textSize="30sp" />
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>
