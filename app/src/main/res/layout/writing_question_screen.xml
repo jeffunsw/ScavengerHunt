@@ -26,6 +26,65 @@
             android:textColor="@color/white"
             android:textSize="54sp" />
 
+        <TextView
+            android:id="@+id/writingQuestion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="Hi Tom! My name ____ is Jeffrey. What ___ beautiful day out today."
+            android:textAlignment="center"
+            android:textSize="25dp"
+            android:textColor="@color/white"
+            android:padding="10dp"
+            android:layout_marginBottom="100dp"
+            />
+
+        <TextView
+            android:id="@+id/writingAnswerA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:padding="10dp"
+            android:background="@drawable/rounded"
+            android:text="is, a"
+            android:textAlignment="center"
+            android:textSize="25dp"
+            android:textColor="@color/white"
+            android:layout_marginTop="10dp"
+            />
+
+        <TextView
+            android:id="@+id/writingAnswerB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:background="@drawable/rounded_yellow"
+            android:padding="10dp"
+            android:text="are, is"
+            android:textAlignment="center"
+            android:textSize="25dp"
+            android:textColor="@color/white"
+            android:layout_marginTop="10dp"
+            />
+
+        <TextView
+            android:id="@+id/writingAnswerC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:background = "@drawable/rounded_red"
+            android:padding="10dp"
+            android:text="is, an"
+            android:textAlignment="center"
+            android:textSize="25dp"
+            android:textColor="@color/white"
+            android:layout_marginTop="10dp"
+            />
+
 
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>

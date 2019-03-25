@@ -26,6 +26,65 @@
             android:textColor="@color/white"
             android:textSize="54sp" />
 
+        <TextView
+            android:id="@+id/readingQuestion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="Jack wore red shoes to school. Mary wore purple shoes. What colour shoes did Jack wear?"
+            android:textAlignment="center"
+            android:textSize="25dp"
+            android:textColor="@color/white"
+            android:padding="10dp"
+            android:layout_marginBottom="100dp"
+            />
+
+        <TextView
+            android:id="@+id/readingAnswerA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:padding="10dp"
+            android:background="@drawable/rounded_purple"
+            android:text="Red"
+            android:textAlignment="center"
+            android:textSize="25dp"
+            android:textColor="@color/white"
+            android:layout_marginTop="10dp"
+            />
+
+        <TextView
+            android:id="@+id/readingAnswerB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:background="@drawable/rounded_red"
+            android:padding="10dp"
+            android:text="Purple"
+            android:textAlignment="center"
+            android:textSize="25dp"
+            android:textColor="@color/white"
+            android:layout_marginTop="10dp"
+            />
+
+        <TextView
+            android:id="@+id/readingAnswerC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:background = "@drawable/rounded"
+            android:padding="10dp"
+            android:text="Neither"
+            android:textAlignment="center"
+            android:textSize="25dp"
+            android:textColor="@color/white"
+            android:layout_marginTop="10dp"
+            />
+
 
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>
