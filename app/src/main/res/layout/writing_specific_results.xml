@@ -69,18 +69,8 @@
 
         <Button
             android:id="@+id/writingAnswerC"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="60dp"
-            android:layout_marginRight="60dp"
-            android:background = "@drawable/rounded_red"
-            android:padding="10dp"
+            style="@style/AnswerButtonRed"
             android:text="Next!"
-            android:textAlignment="center"
-            android:textSize="25dp"
-            android:textAllCaps="false"
-            android:textColor="@color/white"
-            android:layout_marginTop="10dp"
             />
 
 
