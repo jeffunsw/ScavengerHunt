@@ -52,14 +52,15 @@
         <Button
             android:id="@+id/button1"
             style="@style/ButtonStyleGreen"
-            android:background="@color/red"
+            android:background="@drawable/rounded_red"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
             android:fontFamily="@font/kirang"
             android:text="@string/results_screen_button1"
-            android:textSize="30sp" />
+            android:textSize="30sp"
+            android:layout_marginBottom="10dp"/>
 
         <Button
             android:id="@+id/button2"
@@ -68,7 +69,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
-            android:background="@color/purple"
+            android:background="@drawable/rounded_purple"
             android:fontFamily="@font/kirang"
             android:text="@string/results_screen_button2"
             android:textSize="30sp" />

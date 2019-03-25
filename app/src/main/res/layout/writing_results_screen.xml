@@ -58,7 +58,8 @@
             android:layout_marginRight="20dp"
             android:fontFamily="@font/kirang"
             android:text="@string/results_screen_button1"
-            android:textSize="30sp" />
+            android:textSize="30sp"
+            android:layout_marginBottom="10dp"/>
 
         <Button
             android:id="@+id/button2"
@@ -67,7 +68,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
-            android:background="@color/heroYellow"
+            android:background="@drawable/rounded_yellow"
             android:fontFamily="@font/kirang"
             android:text="@string/results_screen_button2"
             android:textSize="30sp" />
