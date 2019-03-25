@@ -19,7 +19,9 @@ android:background="@color/heroYellow" >
         android:id="@+id/textView1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="10sp"
+
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
         android:fontFamily="@font/kirang"
         android:gravity="center"
         android:text="@string/join_us_screen_title"
@@ -27,10 +29,25 @@ android:background="@color/heroYellow" >
         android:textSize="54sp" />
 
     <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:layout_marginBottom="10sp"
+        android:fontFamily="@font/kirang"
+        android:gravity="center"
+        android:text="TextView"
+        android:textColor="@color/white"
+        android:textSize="54sp" />
+
+    <TextView
         android:id="@+id/textView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="10sp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:layout_marginBottom="40sp"
         android:fontFamily="@font/kirang"
         android:gravity="center"
         android:text="@string/join_us_screen_message"
@@ -46,6 +63,7 @@ android:background="@color/heroYellow" >
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:fontFamily="@font/kirang"
+        android:onClick="nextScreenToGreetingsScreen"
         android:text="@string/join_us_screen_button"
         android:textSize="30sp" />
 </LinearLayout>

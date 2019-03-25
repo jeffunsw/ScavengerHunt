@@ -23,7 +23,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
-            android:background="@color/Purple"
+            android:background="@color/purple"
             android:fontFamily="@font/kirang"
             android:text="@string/open_treasure_screen_button"
             android:textSize="36sp" />
