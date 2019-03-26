@@ -26,7 +26,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
-            android:background="@color/green"
+            android:background="@drawable/rounded"
             android:fontFamily="@font/kirang"
             android:text="@string/reading_intro_screen_title"
             android:textSize="36sp" />

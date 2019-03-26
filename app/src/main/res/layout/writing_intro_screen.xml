@@ -26,9 +26,9 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
-            android:background="@color/red"
+            android:background="@drawable/rounded_red"
             android:fontFamily="@font/kirang"
-            android:text="@string/reading_intro_screen_button"
+            android:text="WRITING"
             android:textSize="36sp" />
 
     </LinearLayout>
