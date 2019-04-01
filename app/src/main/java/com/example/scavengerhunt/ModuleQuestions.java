@@ -135,4 +135,16 @@ public class ModuleQuestions {
 
         return readingQuestions;
     }
+
+    public static ArrayList<ModuleQuestions> getWritingQuestions() {
+        ArrayList<ModuleQuestions> writingQuestions = new ArrayList<>();
+        writingQuestions.add(new ModuleQuestions("WritingQ1", "Writing", "I found a _____ hiding place than she did", "best", "good", "better","better", "", false ));
+        writingQuestions.add(new ModuleQuestions("WritingQ2", "Writing", "Jo likes to listen to music ____ she is cleaning her room", "even", "while", "during","while", "", false ));
+        writingQuestions.add(new ModuleQuestions("WritingQ3", "Writing", "Jess bends her knees before ____ shoots", "she", "her", "she's","8", "", false ));
+        writingQuestions.add(new ModuleQuestions("WritingQ4", "Writing", "Mark and his friends went to the zoo. It was an ____ day.", "fun", "good", "exciting","exciting", "", false ));
+        writingQuestions.add(new ModuleQuestions("WritingQ5", "Writing", "The boy put on his shoes ____ he tied his laces", "and then", "next", "and so","and then", "", false ));
+
+        return writingQuestions;
+    }
+
 }
