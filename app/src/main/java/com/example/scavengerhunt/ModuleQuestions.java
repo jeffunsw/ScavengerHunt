@@ -110,7 +110,7 @@ public class ModuleQuestions {
         mathsQuestions.add(new ModuleQuestions("MathsQ2", "Maths", "7 x 8", "56", "15", "54","56", "", false ));
         mathsQuestions.add(new ModuleQuestions("MathsQ3", "Maths", "12 - 4", "16", "8", "3","8", "", false ));
         mathsQuestions.add(new ModuleQuestions("MathsQ4", "Maths", "13 + 11", "24", "22", "26","24", "", false ));
-        mathsQuestions.add(new ModuleQuestions("MathsQ5", "Maths", "10 x 4", "14", "14", "40","40", "", false ));
+        mathsQuestions.add(new ModuleQuestions("MathsQ5", "Maths", "10 x 4", "14", "4", "40","40", "", false ));
 
         return mathsQuestions;
     }
@@ -140,7 +140,7 @@ public class ModuleQuestions {
         ArrayList<ModuleQuestions> writingQuestions = new ArrayList<>();
         writingQuestions.add(new ModuleQuestions("WritingQ1", "Writing", "I found a _____ hiding place than she did", "best", "good", "better","better", "", false ));
         writingQuestions.add(new ModuleQuestions("WritingQ2", "Writing", "Jo likes to listen to music ____ she is cleaning her room", "even", "while", "during","while", "", false ));
-        writingQuestions.add(new ModuleQuestions("WritingQ3", "Writing", "Jess bends her knees before ____ shoots", "she", "her", "she's","8", "", false ));
+        writingQuestions.add(new ModuleQuestions("WritingQ3", "Writing", "Jess bends her knees before ____ shoots", "she", "her", "she's","she", "", false ));
         writingQuestions.add(new ModuleQuestions("WritingQ4", "Writing", "Mark and his friends went to the zoo. It was an ____ day.", "fun", "good", "exciting","exciting", "", false ));
         writingQuestions.add(new ModuleQuestions("WritingQ5", "Writing", "The boy put on his shoes ____ he tied his laces", "and then", "next", "and so","and then", "", false ));
 
