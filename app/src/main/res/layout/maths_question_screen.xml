@@ -17,7 +17,7 @@
 
 
         <TextView
-            android:id="@+id/button"
+            android:id="@+id/module"
             style="@style/ButtonStyleGreen"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -29,37 +29,36 @@
             android:textSize="36sp" />
 
         <TextView
-            android:id="@+id/mathsQuestion"
+            android:id="@+id/question"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
+            android:layout_marginBottom="100dp"
+            android:padding="10dp"
             android:text="5 x 5"
             android:textAlignment="center"
-            android:textSize="50dp"
             android:textColor="@color/white"
-            android:padding="10dp"
-            android:layout_marginBottom="100dp"
-            />
+            android:textSize="50dp" />
 
         <Button
-            android:id="@+id/mathsAnswerA"
+            android:id="@+id/answerA"
             style="@style/AnswerButtonPurple"
-            android:text="Answer A"
-            />
+            android:onClick="answerA"
+            android:text="Answer A" />
 
         <Button
-            android:id="@+id/mathsAnswerB"
+            android:id="@+id/answerB"
             style="@style/AnswerButtonRed"
-            android:text="Answer B"
+            android:onClick="answerB"
 
-             />
+            android:text="Answer B" />
 
         <Button
-            android:id="@+id/mathsAnswerC"
+            android:id="@+id/answerC"
             style="@style/AnswerButtonGreen"
-            android:text="Answer C"
-            />
+            android:onClick="answerC"
+            android:text="Answer C" />
 
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>

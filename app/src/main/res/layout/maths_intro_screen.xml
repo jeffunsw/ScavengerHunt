@@ -27,6 +27,7 @@
             android:layout_marginRight="20dp"
             android:background="@drawable/rounded_yellow"
             android:fontFamily="@font/kirang"
+            android:onClick="toQuestionScreen"
             android:text="@string/maths_intro_screen_title"
             android:textSize="36sp" />
 

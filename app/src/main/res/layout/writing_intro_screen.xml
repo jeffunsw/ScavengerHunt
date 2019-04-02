@@ -28,6 +28,7 @@
             android:layout_marginRight="20dp"
             android:background="@drawable/rounded_red"
             android:fontFamily="@font/kirang"
+            android:onClick="toQuestionScreen"
             android:text="WRITING"
             android:textSize="36sp" />
 

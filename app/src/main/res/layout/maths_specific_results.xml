@@ -17,7 +17,7 @@
 
 
         <TextView
-            android:id="@+id/button"
+            android:id="@+id/module"
             style="@style/ButtonStyleGreen"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -29,51 +29,49 @@
             android:textSize="36sp" />
 
         <TextView
-            android:id="@+id/mathsResult"
+            android:id="@+id/result"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:padding="10dp"
             android:text="Correct!"
             android:textAlignment="center"
-            android:textSize="30dp"
             android:textColor="@color/white"
-            android:padding="10dp"
-            android:layout_marginBottom="10dp" />
+            android:textSize="30dp" />
 
         <TextView
-            android:id="@+id/mathsQuestion1"
+            android:id="@+id/question"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
+            android:layout_marginBottom="30dp"
+            android:padding="10dp"
             android:text="5 x 5"
             android:textAlignment="center"
-            android:textSize="50dp"
             android:textColor="@color/white"
-            android:padding="10dp"
-            android:layout_marginBottom="30dp"
-            />
+            android:textSize="50dp" />
 
         <TextView
-            android:id="@+id/mathsAnswer"
+            android:id="@+id/answer"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
+            android:layout_marginBottom="100dp"
+            android:padding="10dp"
             android:text="= 25"
             android:textAlignment="center"
-            android:textSize="30dp"
             android:textColor="@color/white"
-            android:padding="10dp"
-            android:layout_marginBottom="100dp"
-            />
+            android:textSize="30dp" />
 
         <Button
             android:id="@+id/mathsNext"
             style="@style/AnswerButtonGreen"
-            android:text="Next!"
-            />
+            android:onClick="nextQuestion"
+            android:text="Next!" />
 
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>
