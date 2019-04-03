@@ -50,7 +50,7 @@ public class QuestionSectionResults extends AppCompatActivity {
             progressButton.setText("Next!");
 
         } else {
-            result.setText("Better luck next time!");
+            result.setText("Try again - Don't give up on your quest to find the treasurer!");
             progressButton.setText("Redo");
             progressButton.setOnClickListener( new View.OnClickListener() {
 
