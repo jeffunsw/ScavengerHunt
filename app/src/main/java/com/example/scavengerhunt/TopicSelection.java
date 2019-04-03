@@ -71,6 +71,8 @@ public class TopicSelection extends AppCompatActivity {
         intent.putExtra("question", ModuleQuestion.get(currentQuestion).getQuestion());
         intent.putExtra("module", ModuleQuestion.get(currentQuestion).getModule());
         intent.putExtra("correctAnswer", ModuleQuestion.get(currentQuestion).getCorrectAnswer());
+        intent.putExtra("questionSize", ModuleQuestion.get(currentQuestion).getQuestionSize());
+        intent.putExtra("answerSize", ModuleQuestion.get(currentQuestion).getAnswerSize());
 
         startActivity(intent);
     }

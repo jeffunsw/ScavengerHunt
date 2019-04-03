@@ -5,46 +5,49 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/heroYellow" >
-
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <LinearLayout
+            android:id="@+id/top"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:paddingTop="40dp"
-            android:paddingBottom="40dp"
-            tools:layout_editor_absoluteY="586dp">
+            android:paddingLeft="40dp"
+            android:paddingTop="20dp"
+            android:paddingRight="40dp"
+            android:paddingBottom="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
             <TextView
                 android:id="@+id/module"
-                style="@style/ButtonStyleGreen"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="40dp"
-                android:layout_marginRight="40dp"
-                android:background="@color/heroYellow"
+                android:layout_marginBottom="10sp"
                 android:fontFamily="@font/kirang"
-                android:text="@string/maths_intro_screen_title"
-                android:textSize="36sp" />
-
-            <TextView
-                android:id="@+id/question"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="40dp"
-                android:layout_marginRight="40dp"
-                android:padding="10dp"
-                android:text="5 x 5"
-                android:textAlignment="center"
+                android:gravity="center"
+                android:text="section"
                 android:textColor="@color/white"
-                android:fontFamily="@font/kirang"
-                android:textSize="50dp" />
+                android:textSize="54sp" />
+
         </LinearLayout>
 
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerv_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignTop="@+id/top"
+            android:layout_alignBottom="@+id/bottom"
+            android:layout_marginTop="113dp"
+            android:layout_marginBottom="139dp">
+
+        </android.support.v7.widget.RecyclerView>
+
+
         <LinearLayout
+            android:id="@+id/bottom"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
@@ -54,24 +57,11 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
-
             <Button
-                android:id="@+id/answerA"
-                style="@style/AnswerButtonPurple"
-                android:onClick="answerA"
-                android:text="Answer A" />
-
-            <Button
-                android:id="@+id/answerB"
+                android:id="@+id/progressButton"
                 style="@style/AnswerButtonRed"
-                android:onClick="answerB"
-                android:text="Answer B" />
-
-            <Button
-                android:id="@+id/answerC"
-                style="@style/AnswerButtonGreen"
-                android:onClick="answerC"
-                android:text="Answer C" />
+                android:onClick="showSectionResult"
+                android:text="@string/results_screen_button2" />
 
         </LinearLayout>
 

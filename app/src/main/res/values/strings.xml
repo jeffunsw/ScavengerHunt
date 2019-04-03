@@ -24,6 +24,7 @@
     <string name="results_screen_button2">Next!</string>
     <string name="results_screen_subtitle">Congratulations!</string>
     <string name="results_screen_message">You got @ / 5 correct</string>
+    <string name="review">Review time!</string>
 
 
 </resources>
