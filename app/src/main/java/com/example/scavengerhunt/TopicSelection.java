@@ -12,7 +12,7 @@ public class TopicSelection extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.maths_intro_screen);
+//        setContentView(R.layout.maths_intro_screen);
 
         // Get Game Progress
         GameProgress mApp = ((GameProgress)getApplicationContext());
@@ -22,16 +22,16 @@ public class TopicSelection extends AppCompatActivity {
 
         switch (sectionNumber) {
             case 1:
-                setContentView(R.layout.maths_intro_screen);
+                setContentView(R.layout.intro_maths_screen);
                 break;
             case 2:
-                setContentView(R.layout.reading_intro_screen);
+                setContentView(R.layout.intro_reading_screen);
                 break;
             case 3:
-                setContentView(R.layout.writing_intro_screen);
+                setContentView(R.layout.intro_writing_screen);
                 break;
             case 4:
-                setContentView(R.layout.open_treasurer_screen);
+                setContentView(R.layout.intro_treasure_screen);
                 break;
             default:
                 // Default
