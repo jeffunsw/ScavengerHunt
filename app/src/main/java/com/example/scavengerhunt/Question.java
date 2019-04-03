@@ -7,14 +7,12 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import java.util.ArrayList;
-
 public class Question extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.maths_question_screen);
+        setContentView(R.layout.question);
 
         Intent intent = getIntent();
 

@@ -15,7 +15,7 @@ public class QuestionSectionResults extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.maths_results_screen);
+        setContentView(R.layout.section_results);
 
         GameProgress mApp = ((GameProgress)getApplicationContext());
         mApp.setQuestionOneResults(false);
@@ -39,7 +39,7 @@ public class QuestionSectionResults extends AppCompatActivity {
             case 3: marks = mApp.getSectionThreeMarks(); mark.setText("You got " + marks + "/5 correct!");break;
         }
 
-        if (marks > 3) { // Default 3
+        if (marks >= 0) { // Default 3
             result.setText("Congratulations!");
             progressButton.setText("Next!");
 
