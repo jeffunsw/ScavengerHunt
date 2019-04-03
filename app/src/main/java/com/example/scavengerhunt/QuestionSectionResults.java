@@ -39,7 +39,7 @@ public class QuestionSectionResults extends AppCompatActivity {
             case 3: marks = mApp.getSectionThreeMarks(); mark.setText("You got " + marks + "/5 correct!");break;
         }
 
-        if (marks > 3) {
+        if (marks > 3) { // Default 3
             result.setText("Congratulations!");
             progressButton.setText("Next!");
 
@@ -106,47 +106,4 @@ public class QuestionSectionResults extends AppCompatActivity {
 
     }
 
-//    public void goHome(View view) {
-//        Intent home = new Intent(this, TopicSelection.class);
-//        startActivity(home);
-//    }
-
-//    public void nextQuestionModule(View view) {
-//
-//        // Get Game Progress
-//        GameProgress mApp = ((GameProgress)getApplicationContext());
-//
-//        // Get the all the questions
-//        Integer sectionNumber = mApp.getSection();
-//
-//        ArrayList<ModuleQuestions> ModuleQuestion;
-//
-//        switch (sectionNumber) {
-//            case 1:
-//                ModuleQuestion = ModuleQuestions.getMathsQuestions();
-//                break;
-//            case 2:
-//                ModuleQuestion = ModuleQuestions.getReadingQuestions();
-//                break;
-//            case 3:
-//                ModuleQuestion = ModuleQuestions.getWritingQuestions();
-//                break;
-//            default:
-//                // Default
-//                ModuleQuestion = ModuleQuestions.getMathsQuestions();
-//        }
-//
-//        Intent nextQuestion = new Intent(this, Question.class);
-//
-//        Integer nextQuestionNumber = mApp.getQuestionNumber();
-//
-//        nextQuestion.putExtra("answerA", ModuleQuestion.get(nextQuestionNumber).getAnswerA());
-//        nextQuestion.putExtra("answerB", ModuleQuestion.get(nextQuestionNumber).getAnswerB());
-//        nextQuestion.putExtra("answerC", ModuleQuestion.get(nextQuestionNumber).getAnswerC());
-//        nextQuestion.putExtra("question", ModuleQuestion.get(nextQuestionNumber).getQuestion());
-//        nextQuestion.putExtra("module", ModuleQuestion.get(nextQuestionNumber).getModule());
-//        nextQuestion.putExtra("correctAnswer", ModuleQuestion.get(nextQuestionNumber).getCorrectAnswer());
-//
-//        startActivity(nextQuestion);
-//    }
 }

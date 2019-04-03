@@ -30,9 +30,12 @@ public class TopicSelection extends AppCompatActivity {
             case 3:
                 setContentView(R.layout.writing_intro_screen);
                 break;
+            case 4:
+                setContentView(R.layout.open_treasurer_screen);
+                break;
             default:
                 // Default
-                setContentView(R.layout.maths_intro_screen);
+//                setContentView(R.layout.maths_intro_screen);
         }
 
     }
@@ -62,6 +65,7 @@ public class TopicSelection extends AppCompatActivity {
         }
 
         Intent intent = new Intent(this, Question.class);
+        Intent treasure = new Intent(this, Treasure.class);
 
         Integer currentQuestion = mApp.getQuestionNumber();
 
@@ -74,6 +78,11 @@ public class TopicSelection extends AppCompatActivity {
         intent.putExtra("questionSize", ModuleQuestion.get(currentQuestion).getQuestionSize());
         intent.putExtra("answerSize", ModuleQuestion.get(currentQuestion).getAnswerSize());
 
-        startActivity(intent);
+        if (sectionNumber == 4) {
+            startActivity(treasure);
+        } else {
+            startActivity(intent);
+        }
+
     }
 }

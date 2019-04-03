@@ -46,6 +46,7 @@
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
             android:fontFamily="@font/kirang"
+            android:onClick="showVideo"
             android:text="@string/treasure_chest_screen_button"
             android:textSize="30sp" />
     </LinearLayout>

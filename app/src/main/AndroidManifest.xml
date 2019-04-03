@@ -10,7 +10,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ListResultsView"></activity>
+        <activity android:name=".Treasure"></activity>
+        <activity android:name=".ListResultsView" />
         <activity android:name=".QuestionSectionList" />
         <activity android:name=".QuestionSectionResults" />
         <activity android:name=".QuestionResult" />

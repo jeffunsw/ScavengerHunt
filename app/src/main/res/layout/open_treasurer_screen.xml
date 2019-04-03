@@ -25,6 +25,7 @@
             android:layout_marginRight="20dp"
             android:background="@drawable/rounded_purple"
             android:fontFamily="@font/kirang"
+            android:onClick="toQuestionScreen"
             android:text="@string/open_treasure_screen_button"
             android:textSize="36sp" />
 
