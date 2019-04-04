@@ -154,19 +154,19 @@ public class ModuleQuestions extends Application {
         ArrayList<ModuleQuestions> readingQuestions = new ArrayList<>();
         readingQuestions.add(new ModuleQuestions("ReadingQ1", "Reading", "Have you ever thought about being a pirate? You may have read about pirates in stories and thought that it would be a great life. Pirates sail all day and never have to go to school. But think again! A pirate's life may not be as much fun as you think.\n\n" +
                 "The writer thinks being a pirate would be ",
-                "full of problems", "fun but dangerous", "better than going to school","full of problems", "", false, 25, 60 ));
+                "full of problems", "fun but dangerous", "better than going to school","full of problems", "", false, 20, 60 ));
         readingQuestions.add(new ModuleQuestions("ReadingQ2", "Reading", "Food is not easy to find at sea. There are no refrigerators onboard so you can forget about eating fresh food. Meat goes bad after just a few days. Dry food like flour and bread has weevils and other nasty creatures crawling inside. Imagine eating a sandwich full of insects or meat served with maggots.\n\n" +
                 "Weevils can be found in",
-                "flour", "meat", "fresh fruit","flour", "", false, 25, 60 ));
+                "flour", "meat", "fresh fruit","flour", "", false, 20, 60 ));
         readingQuestions.add(new ModuleQuestions("ReadingQ3", "Reading", "Pirates' hammocks are often hung over barrels of stored food. That's the perfect place for rats and mice to live. If you become a pirate you could wake up each morning sharing your bed with a few friendly rodents.\n\n" +
                 "The writer uses the words a few friendly rodents to ",
-                "show that only a few are good", "make an awful thing sound not so bad", "make you believe they are good pets","make an awful thing sound not so bad", "", false, 25, 60 ));
+                "show that only a few are good", "make an awful thing sound not so bad", "make you believe they are good pets","make an awful thing sound not so bad", "", false, 20, 40 ));
         readingQuestions.add(new ModuleQuestions("ReadingQ4", "Reading", "Going to the toilet is not that easy either! Over the side of the ship is the only place for this. Rough weather makes this really tricky, even for the most experienced sailor. \n\n " +
                 "Going to the toilet on a ship is",
-                "easy in good weather.", "difficult for all pirates.", "tricky only in bad weather.","difficult for all pirates", "", false, 25, 60 ));
+                "easy in good weather.", "difficult for all pirates.", "tricky only in bad weather.","difficult for all pirates", "", false, 20, 60 ));
         readingQuestions.add(new ModuleQuestions("ReadingQ5", "Reading", "It's not all plain sailing on a pirate ship. Some of the time you will have to do battle with other large, hairy pirates with long swords, huge guns and very loud cannons. This could be extremely dangerous — deadly even! \n\n" + "" +
                 "The words plain sailing mean pirate ships",
-                "are not easy to sail", "decorated beautifully", "can be dull and boring","are not easy to sail", "", false ,25, 60));
+                "are not easy to sail", "decorated beautifully", "can be dull and boring","are not easy to sail", "", false ,20, 60));
 
         return readingQuestions;
     }
