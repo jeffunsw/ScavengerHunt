@@ -30,22 +30,33 @@
             android:id="@+id/textView2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="10sp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginBottom="60dp"
             android:fontFamily="@font/kirang"
             android:gravity="center"
             android:text="@string/treasure_chest_screen_message"
             android:textColor="@color/white"
             android:textSize="30sp" />
 
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="182dp"
+            android:layout_height="182dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="40dp"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/icon_treasure" />
 
         <Button
             android:id="@+id/button"
             style="@style/ButtonStyleGreen"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
             android:fontFamily="@font/kirang"
+            android:onClick="showVideo"
             android:text="@string/treasure_chest_screen_button"
             android:textSize="30sp" />
     </LinearLayout>
