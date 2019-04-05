@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/island_1">
+    android:background="@drawable/reading_island">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -16,7 +16,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.972">
+        app:layout_constraintVertical_bias="0.974">
+
 
         <Button
             android:id="@+id/button"
@@ -25,12 +26,11 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
-            android:background="@drawable/rounded_yellow"
+            android:background="@drawable/rounded"
             android:fontFamily="@font/kirang"
             android:onClick="toQuestionScreen"
-            android:text="@string/maths_intro_screen_title"
+            android:text="@string/reading_intro_screen_title"
             android:textSize="36sp" />
-
 
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>
