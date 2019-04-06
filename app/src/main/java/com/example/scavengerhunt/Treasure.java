@@ -11,10 +11,15 @@ public class Treasure extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        // Set layout to treasure chest screen
         setContentView(R.layout.treasure_chest_screen);
     }
 
+    // showVideo onClick
     public void showVideo(View view) {
+
+        // Create intent with URI & start activity
         Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/watch?v=QYh6mYIJG2Y"));
         startActivity(browserIntent);
     }

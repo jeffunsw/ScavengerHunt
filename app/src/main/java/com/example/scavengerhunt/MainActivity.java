@@ -7,22 +7,35 @@ import android.view.View;
 import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
-    public static final String EXTRA_MESSAGE = "NULL";
-    // Another test
+
+    // Create a static variable for the Child's name
+    public static final String NAME = "NULL";
     
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        // Set layout to the name screen
         setContentView(R.layout.name_screen);
+
     }
 
+    // sendMessage onClick
     public void sendMessage(View view) {
-        Intent intent = new Intent(this, JoinUsScreen.class);
-//        Intent intent = new Intent(this, QuestionSectionList.class);
 
+        // Create an intent
+        Intent intent = new Intent(this, JoinUsScreen.class);
+
+        // Find in XML 'editText'
         EditText editText = (EditText) findViewById(R.id.editText);
+
+        // Create a string from the input
         String message = editText.getText().toString();
-        intent.putExtra(EXTRA_MESSAGE, message);
+
+        // Add the string to the Extra
+        intent.putExtra(NAME, message);
+
+        // Start the activity
         startActivity(intent);
     }
 }

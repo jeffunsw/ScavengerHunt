@@ -15,8 +15,8 @@ public class QuestionResult extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.question_results);
 
+        // Retrieve data from intent
         Intent intent = getIntent();
-
         String retrieveModule = intent.getStringExtra("module");
         String retrieveCorrectAnswer = intent.getStringExtra("correctAnswer");
         String retrieveQuestion = intent.getStringExtra("question");
@@ -28,12 +28,14 @@ public class QuestionResult extends AppCompatActivity {
         TextView answer = findViewById(R.id.answer);
         TextView module = findViewById(R.id.module);
 
+        // Grab the game progress data
         GameProgress mApp = ((GameProgress)getApplicationContext());
-        // Get the all the questions
         Integer sectionNumber = mApp.getSection();
 
+        // Initiate the ArrayList<ModuleQuestions>
         ArrayList<ModuleQuestions> ModuleQuestion;
 
+        // Fill ModuleQuestion with the data of the correct section
         switch (sectionNumber) {
             case 1:
                 ModuleQuestion = ModuleQuestions.getMathsQuestions();
@@ -44,11 +46,13 @@ public class QuestionResult extends AppCompatActivity {
             case 3:
                 ModuleQuestion = ModuleQuestions.getWritingQuestions();
                 break;
-            default:
-                // Default
-                ModuleQuestion = ModuleQuestions.getMathsQuestions();
+
+            // Default
+            default: ModuleQuestion = ModuleQuestions.getMathsQuestions();
+
         }
 
+        // Update the text size of the Question and Answer (from ModuleQuestion)
         question.setTextSize(ModuleQuestion.get(sectionNumber).getQuestionSize());
         answer.setTextSize(ModuleQuestion.get(sectionNumber).getAnswerSize());
 
@@ -59,16 +63,18 @@ public class QuestionResult extends AppCompatActivity {
         result.setText(retrieveResult);
     }
 
+    // nextQuestion onClick
     public void nextQuestion(View view) {
 
-        // Get Game Progress
+        // Get Game Progress and get section number & current question
         GameProgress mApp = ((GameProgress)getApplicationContext());
-
-        // Get the all the questions
         Integer sectionNumber = mApp.getSection();
+        Integer currentQuestion = mApp.getQuestionNumber();
 
+        // Initiate the ArrayList<ModuleQuestions>
         ArrayList<ModuleQuestions> ModuleQuestion;
 
+        // Fill ModuleQuestion with the data of the correct section
         switch (sectionNumber) {
             case 1:
                 ModuleQuestion = ModuleQuestions.getMathsQuestions();
@@ -79,28 +85,36 @@ public class QuestionResult extends AppCompatActivity {
             case 3:
                 ModuleQuestion = ModuleQuestions.getWritingQuestions();
                 break;
-            default:
-                // Default
-                ModuleQuestion = ModuleQuestions.getMathsQuestions();
+
+            // Default
+            default: ModuleQuestion = ModuleQuestions.getMathsQuestions();
+
         }
 
-
+        // Create two intents. 1) Show next question, 2) Finish the section
         Intent nextQuestion = new Intent(this, Question.class);
         Intent finishSection = new Intent(this, QuestionSectionList.class);
 
-        Integer currentQuestion = mApp.getQuestionNumber();
-
-        // Max 5 questions
+        // Continue after 5 questions
         if (currentQuestion.equals(4)) {
+
+            // Increment section number
             mApp.addSection();
+
+            // Reset question number back to 0
             mApp.resetQuestionNumber();
+
+            // Start activity
             startActivity(finishSection);
         } else {
 
+            // Increment question number
             mApp.addQuestionNumber();
 
+            // Retrieve current question number
             Integer nextQuestionNumber = mApp.getQuestionNumber();
 
+            // Insert into extra the data
             nextQuestion.putExtra("answerA", ModuleQuestion.get(nextQuestionNumber).getAnswerA());
             nextQuestion.putExtra("answerB", ModuleQuestion.get(nextQuestionNumber).getAnswerB());
             nextQuestion.putExtra("answerC", ModuleQuestion.get(nextQuestionNumber).getAnswerC());
@@ -110,6 +124,7 @@ public class QuestionResult extends AppCompatActivity {
             nextQuestion.putExtra("questionSize", ModuleQuestion.get(currentQuestion).getQuestionSize());
             nextQuestion.putExtra("answerSize", ModuleQuestion.get(currentQuestion).getAnswerSize());
 
+            // Start activity
             startActivity(nextQuestion);
         }
 

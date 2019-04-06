@@ -39,7 +39,7 @@ public class QuestionSectionResults extends AppCompatActivity {
             case 3: marks = mApp.getSectionThreeMarks(); mark.setText("You got " + marks + "/5 correct!");break;
         }
 
-        if (marks >= 0) { // Default 3
+        if (marks > 3) { // Default 3
             result.setText("Congratulations!");
             progressButton.setText("Next!");
 

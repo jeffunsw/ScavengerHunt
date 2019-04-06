@@ -139,6 +139,7 @@ public class ModuleQuestions extends Application {
         this.result = result;
     }
 
+    // Maths Questions
     public static ArrayList<ModuleQuestions> getMathsQuestions() {
         ArrayList<ModuleQuestions> mathsQuestions = new ArrayList<>();
         mathsQuestions.add(new ModuleQuestions("MathsQ1", "Maths", "3 x 5", "8", "15", "10","15", "", false, 120, 60 ));
@@ -150,6 +151,7 @@ public class ModuleQuestions extends Application {
         return mathsQuestions;
     }
 
+    // Reading Questions
     public static ArrayList<ModuleQuestions> getReadingQuestions() {
         ArrayList<ModuleQuestions> readingQuestions = new ArrayList<>();
         readingQuestions.add(new ModuleQuestions("ReadingQ1", "Reading", "Have you ever thought about being a pirate? You may have read about pirates in stories and thought that it would be a great life. Pirates sail all day and never have to go to school. But think again! A pirate's life may not be as much fun as you think.\n\n" +
@@ -171,6 +173,7 @@ public class ModuleQuestions extends Application {
         return readingQuestions;
     }
 
+    // Writing Questions
     public static ArrayList<ModuleQuestions> getWritingQuestions() {
         ArrayList<ModuleQuestions> writingQuestions = new ArrayList<>();
         writingQuestions.add(new ModuleQuestions("WritingQ1", "Writing", "I found a _____ hiding place than she did", "best", "good", "better","better", "", false,50, 60  ));

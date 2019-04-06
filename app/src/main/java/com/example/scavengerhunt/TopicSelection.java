@@ -12,14 +12,14 @@ public class TopicSelection extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-//        setContentView(R.layout.maths_intro_screen);
 
         // Get Game Progress
         GameProgress mApp = ((GameProgress)getApplicationContext());
 
-        // Get the all the questions
+        // From Game Progress get the current section
         Integer sectionNumber = mApp.getSection();
 
+        // Change layout based on different sections
         switch (sectionNumber) {
             case 1:
                 setContentView(R.layout.intro_maths_screen);
@@ -33,22 +33,24 @@ public class TopicSelection extends AppCompatActivity {
             case 4:
                 setContentView(R.layout.intro_treasure_screen);
                 break;
-            default:
-                // Default
-//                setContentView(R.layout.maths_intro_screen);
         }
 
     }
 
+    // toQuestionScreen onClick
     public void toQuestionScreen(View view) {
+
         // Get Game Progress
         GameProgress mApp = ((GameProgress)getApplicationContext());
 
-        // Get the all the questions
+        // Get the all the current section and current question number
         Integer sectionNumber = mApp.getSection();
+        Integer currentQuestion = mApp.getQuestionNumber();
 
+        // Initiate the ArrayList<ModuleQuestions>
         ArrayList<ModuleQuestions> ModuleQuestion;
 
+        // Fill ModuleQuestion with the data of the correct section
         switch (sectionNumber) {
             case 1:
                 ModuleQuestion = ModuleQuestions.getMathsQuestions();
@@ -59,16 +61,16 @@ public class TopicSelection extends AppCompatActivity {
             case 3:
                 ModuleQuestion = ModuleQuestions.getWritingQuestions();
                 break;
-            default:
-                // Default
-                ModuleQuestion = ModuleQuestions.getMathsQuestions();
+
+            // Default
+            default: ModuleQuestion = ModuleQuestions.getMathsQuestions();
         }
 
+        // Create two intents. 1) Question screen or 2) Treasure screen
         Intent intent = new Intent(this, Question.class);
         Intent treasure = new Intent(this, Treasure.class);
 
-        Integer currentQuestion = mApp.getQuestionNumber();
-
+        // Insert into extra the data
         intent.putExtra("answerA", ModuleQuestion.get(currentQuestion).getAnswerA());
         intent.putExtra("answerB", ModuleQuestion.get(currentQuestion).getAnswerB());
         intent.putExtra("answerC", ModuleQuestion.get(currentQuestion).getAnswerC());
@@ -78,6 +80,7 @@ public class TopicSelection extends AppCompatActivity {
         intent.putExtra("questionSize", ModuleQuestion.get(currentQuestion).getQuestionSize());
         intent.putExtra("answerSize", ModuleQuestion.get(currentQuestion).getAnswerSize());
 
+        // Dependent on section number, ether show the next question screen or treasure
         if (sectionNumber == 4) {
             startActivity(treasure);
         } else {

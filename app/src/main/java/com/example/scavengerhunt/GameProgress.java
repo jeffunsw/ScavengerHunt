@@ -2,8 +2,6 @@ package com.example.scavengerhunt;
 
 import android.app.Application;
 
-import java.util.ArrayList;
-
 public class GameProgress extends Application {
     private Integer questionNumber = 0;
     private Integer section = 1;

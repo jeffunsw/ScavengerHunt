@@ -20,14 +20,12 @@ public class ListResultsView extends AppCompatActivity {
         String retrieveModule = intent.getStringExtra("module");
         String retrieveCorrectAnswer = intent.getStringExtra("correctAnswer");
         String retrieveQuestion = intent.getStringExtra("question");
-        String retrieveResult = intent.getStringExtra("result");
         Integer retrieveQuestionSize = intent.getExtras().getInt("questionSize");
         Integer retrieveAnswerSize = intent.getExtras().getInt("answerSize");
         String retrieveYourAnswer = intent.getStringExtra("yourAnswer");
 
         // Grab the XML elements
         TextView question = findViewById(R.id.question);
-//        TextView result = findViewById(R.id.result);
         TextView answer = findViewById(R.id.answer);
         TextView module = findViewById(R.id.module);
         TextView yourAnswer = findViewById(R.id.yourAnswer);
@@ -39,7 +37,6 @@ public class ListResultsView extends AppCompatActivity {
         question.setText(retrieveQuestion);
         module.setText(retrieveModule.toUpperCase() + " REVIEW");
         answer.setText(retrieveCorrectAnswer);
-//        result.setText(retrieveResult);
         yourAnswer.setText(retrieveYourAnswer);
     }
 
