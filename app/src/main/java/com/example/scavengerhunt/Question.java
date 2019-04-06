@@ -57,6 +57,7 @@ public class Question extends AppCompatActivity {
         processAnswer("answerC");
     }
 
+    // processAnswer for answers
     public void processAnswer(String type){
 
         // Retrieve data from intent
