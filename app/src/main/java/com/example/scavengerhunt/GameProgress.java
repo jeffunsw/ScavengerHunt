@@ -2,60 +2,12 @@ package com.example.scavengerhunt;
 
 import android.app.Application;
 
-import java.util.ArrayList;
-
 public class GameProgress extends Application {
     private Integer questionNumber = 0;
     private Integer section = 1;
     private Integer sectionOneMarks = 0;
     private Integer sectionTwoMarks = 0;
     private Integer sectionThreeMarks = 0;
-
-    private boolean questionOneResults;
-    private boolean questionTwoResults;
-    private boolean questionThreeResults;
-    private boolean questionFourResults;
-    private boolean questionFiveResults;
-
-    public boolean isQuestionOneResults() {
-        return questionOneResults;
-    }
-
-    public void setQuestionOneResults(boolean questionOneResults) {
-        this.questionOneResults = questionOneResults;
-    }
-
-    public boolean isQuestionTwoResults() {
-        return questionTwoResults;
-    }
-
-    public void setQuestionTwoResults(boolean questionTwoResults) {
-        this.questionTwoResults = questionTwoResults;
-    }
-
-    public boolean isQuestionThreeResults() {
-        return questionThreeResults;
-    }
-
-    public void setQuestionThreeResults(boolean questionThreeResults) {
-        this.questionThreeResults = questionThreeResults;
-    }
-
-    public boolean isQuestionFourResults() {
-        return questionFourResults;
-    }
-
-    public void setQuestionFourResults(boolean questionFourResults) {
-        this.questionFourResults = questionFourResults;
-    }
-
-    public boolean isQuestionFiveResults() {
-        return questionFiveResults;
-    }
-
-    public void setQuestionFiveResults(boolean questionFiveResults) {
-        this.questionFiveResults = questionFiveResults;
-    }
 
     public Integer getQuestionNumber() {
         return questionNumber;

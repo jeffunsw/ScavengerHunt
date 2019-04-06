@@ -15,15 +15,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="84dp"
-            android:layout_height="80dp"
-            android:layout_gravity="center"
-            android:layout_marginBottom="20dp"
-            android:scaleType="fitXY"
-            app:srcCompat="@drawable/icon_chest" />
-
         <TextView
             android:id="@+id/textView"
             android:layout_width="match_parent"
@@ -58,7 +49,6 @@
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
             android:fontFamily="@font/kirang"
-            android:onClick="nextScreen"
             android:text="@string/greetings_screen_button"
             android:textSize="30sp" />
     </LinearLayout>

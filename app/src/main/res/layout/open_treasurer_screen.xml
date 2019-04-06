@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/island_2">
+    android:background="@color/heroYellow" >
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -13,23 +13,19 @@
         android:layout_marginBottom="8dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.974">
+        app:layout_constraintTop_toTopOf="parent">
 
 
         <Button
             android:id="@+id/button"
-            style="@style/ButtonStyleGreen"
+            style="@style/AnswerButtonPurple"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
-            android:background="@drawable/rounded"
+            android:background="@drawable/rounded_purple"
             android:fontFamily="@font/kirang"
-            android:onClick="toQuestionScreen"
-            android:text="@string/reading_intro_screen_title"
+            android:text="@string/open_treasure_screen_button"
             android:textSize="36sp" />
 
     </LinearLayout>
