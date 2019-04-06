@@ -15,9 +15,14 @@ public class QuestionSectionResults extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.maths_results_screen);
+        setContentView(R.layout.section_results);
 
         GameProgress mApp = ((GameProgress)getApplicationContext());
+        mApp.setQuestionOneResults(false);
+        mApp.setQuestionTwoResults(false);
+        mApp.setQuestionThreeResults(false);
+        mApp.setQuestionFourResults(false);
+        mApp.setQuestionFiveResults(false);
 
         TextView module = findViewById(R.id.module);
         TextView result = findViewById(R.id.result);
@@ -26,28 +31,27 @@ public class QuestionSectionResults extends AppCompatActivity {
 
         Integer sectionNumber = mApp.getSection();
 
-        ArrayList<ModuleQuestions> ModuleQuestion;
-
-        Integer sectionOneMarks = mApp.getSectionOneMarks();
-        Integer sectionTwoMarks = mApp.getSectionTwoMarks();
-        Integer sectionThreeMarks = mApp.getSectionThreeMarks();
+        Integer marks = 0;
 
         switch (sectionNumber - 1) {
-            case 1:
-                mark.setText("You got " + sectionOneMarks + "/5 correct!");
-                break;
-            case 2:
-                mark.setText("You got " + sectionTwoMarks + "/5 correct!");
-                break;
-            case 3:
-                mark.setText("You got " + sectionThreeMarks + "/5 correct!");
-                break;
+            case 1: marks = mApp.getSectionOneMarks(); mark.setText("You got " + marks + "/5 correct!"); break;
+            case 2: marks = mApp.getSectionTwoMarks(); mark.setText("You got " + marks + "/5 correct!");break;
+            case 3: marks = mApp.getSectionThreeMarks(); mark.setText("You got " + marks + "/5 correct!");break;
         }
 
-
-        if (mApp.getSectionOneMarks() > 3) {
+        if (marks >= 0) { // Default 3
             result.setText("Congratulations!");
             progressButton.setText("Next!");
+
+            progressButton.setOnClickListener( new View.OnClickListener() {
+
+                @Override
+                public void onClick(View v) {
+                    Intent home = new Intent(v.getContext(), TopicSelection.class);
+                    startActivity(home);
+                }
+            });
+
 
         } else {
             result.setText("Better luck next time!");
@@ -87,51 +91,19 @@ public class QuestionSectionResults extends AppCompatActivity {
             });
         }
 
-        module.setText("Maths");
 
-    }
-
-    public void goHome(View view) {
-        Intent home = new Intent(this, TopicSelection.class);
-        startActivity(home);
-    }
-
-    public void nextQuestionModule(View view) {
-
-        // Get Game Progress
-        GameProgress mApp = ((GameProgress)getApplicationContext());
-
-        // Get the all the questions
-        Integer sectionNumber = mApp.getSection();
-
-        ArrayList<ModuleQuestions> ModuleQuestion;
-
-        switch (sectionNumber) {
+        switch (sectionNumber - 1) {
             case 1:
-                ModuleQuestion = ModuleQuestions.getMathsQuestions();
+                module.setText("MATHS");
                 break;
             case 2:
-                ModuleQuestion = ModuleQuestions.getReadingQuestions();
+                module.setText("READING");
                 break;
             case 3:
-                ModuleQuestion = ModuleQuestions.getWritingQuestions();
+                module.setText("SPELLING");
                 break;
-            default:
-                // Default
-                ModuleQuestion = ModuleQuestions.getMathsQuestions();
         }
 
-        Intent nextQuestion = new Intent(this, Question.class);
-
-        Integer nextQuestionNumber = mApp.getQuestionNumber();
-
-        nextQuestion.putExtra("answerA", ModuleQuestion.get(nextQuestionNumber).getAnswerA());
-        nextQuestion.putExtra("answerB", ModuleQuestion.get(nextQuestionNumber).getAnswerB());
-        nextQuestion.putExtra("answerC", ModuleQuestion.get(nextQuestionNumber).getAnswerC());
-        nextQuestion.putExtra("question", ModuleQuestion.get(nextQuestionNumber).getQuestion());
-        nextQuestion.putExtra("module", ModuleQuestion.get(nextQuestionNumber).getModule());
-        nextQuestion.putExtra("correctAnswer", ModuleQuestion.get(nextQuestionNumber).getCorrectAnswer());
-
-        startActivity(nextQuestion);
     }
+
 }

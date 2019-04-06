@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -14,7 +13,7 @@ public class QuestionResult extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.maths_specific_results);
+        setContentView(R.layout.question_results);
 
         Intent intent = getIntent();
 
@@ -37,18 +36,21 @@ public class QuestionResult extends AppCompatActivity {
 
         switch (sectionNumber) {
             case 1:
-                question.setTextSize(50);
+                ModuleQuestion = ModuleQuestions.getMathsQuestions();
                 break;
             case 2:
-                question.setTextSize(20);
+                ModuleQuestion = ModuleQuestions.getReadingQuestions();
                 break;
             case 3:
-                question.setTextSize(30);
+                ModuleQuestion = ModuleQuestions.getWritingQuestions();
                 break;
             default:
                 // Default
-                question.setTextSize(10);
+                ModuleQuestion = ModuleQuestions.getMathsQuestions();
         }
+
+        question.setTextSize(ModuleQuestion.get(sectionNumber).getQuestionSize());
+        answer.setTextSize(ModuleQuestion.get(sectionNumber).getAnswerSize());
 
         // Change XML elements according to intent
         question.setText(retrieveQuestion);
@@ -82,10 +84,9 @@ public class QuestionResult extends AppCompatActivity {
                 ModuleQuestion = ModuleQuestions.getMathsQuestions();
         }
 
-//        ArrayList<ModuleQuestions> ModuleQuestion = ModuleQuestions.getMathsQuestions();
 
         Intent nextQuestion = new Intent(this, Question.class);
-        Intent finishSection = new Intent(this, QuestionSectionResults.class);
+        Intent finishSection = new Intent(this, QuestionSectionList.class);
 
         Integer currentQuestion = mApp.getQuestionNumber();
 
@@ -106,6 +107,8 @@ public class QuestionResult extends AppCompatActivity {
             nextQuestion.putExtra("question", ModuleQuestion.get(nextQuestionNumber).getQuestion());
             nextQuestion.putExtra("module", ModuleQuestion.get(nextQuestionNumber).getModule());
             nextQuestion.putExtra("correctAnswer", ModuleQuestion.get(nextQuestionNumber).getCorrectAnswer());
+            nextQuestion.putExtra("questionSize", ModuleQuestion.get(currentQuestion).getQuestionSize());
+            nextQuestion.putExtra("answerSize", ModuleQuestion.get(currentQuestion).getAnswerSize());
 
             startActivity(nextQuestion);
         }

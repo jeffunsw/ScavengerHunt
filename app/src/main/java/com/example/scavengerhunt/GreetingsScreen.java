@@ -13,8 +13,8 @@ public class GreetingsScreen extends AppCompatActivity {
         setContentView(R.layout.greetings_screen);
     }
 
-//    public void nextScreen(View view) {
-//        Intent intent = new Intent(this, GreetingsScreen.class);
-//        startActivity(intent);
-//    }
+    public void nextScreen(View view) {
+        Intent intent = new Intent(this, TopicSelection.class);
+        startActivity(intent);
+    }
 }
