@@ -1,6 +1,8 @@
 package com.example.scavengerhunt;
 
 import android.content.Intent;
+import android.graphics.Color;
+import android.support.constraint.ConstraintLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -15,12 +17,21 @@ public class QuestionResult extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.question_results);
 
+        ConstraintLayout rl = (ConstraintLayout)findViewById(R.id.constraint_layout);
+
+
         // Retrieve data from intent
         Intent intent = getIntent();
         String retrieveModule = intent.getStringExtra("module");
         String retrieveCorrectAnswer = intent.getStringExtra("correctAnswer");
         String retrieveQuestion = intent.getStringExtra("question");
         String retrieveResult = intent.getStringExtra("result");
+
+        if (retrieveResult.equals("Correct!")) {
+            rl.setBackgroundColor(Color.parseColor("#5CAD46"));
+        } else {
+            rl.setBackgroundColor(Color.parseColor("#E8453F"));
+        }
 
         // Grab the XML elements
         TextView question = findViewById(R.id.question);

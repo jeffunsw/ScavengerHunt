@@ -4,7 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/heroYellow" >
+    android:background="@color/heroYellow"
+    android:id="@+id/constraint_layout"
+    >
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -24,14 +26,14 @@
 
             <TextView
                 android:id="@+id/module"
-                style="@style/ButtonStyleGreen"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="20dp"
-                android:background="@color/heroYellow"
                 android:fontFamily="@font/kirang"
+                android:gravity="center"
                 android:text="@string/maths_intro_screen_title"
-                android:textSize="36sp" />
+                android:textColor="@color/white"
+                android:textSize="45sp" />
 
             <TextView
                 android:id="@+id/result"
@@ -90,7 +92,7 @@
 
             <Button
                 android:id="@+id/mathsNext"
-                style="@style/AnswerButtonGreen"
+                style="@style/AnswerButtonPurple"
                 android:onClick="nextQuestion"
                 android:text="Next!" />
         </LinearLayout>
