@@ -4,10 +4,10 @@
     <string name="name_screen_subtitle">What\'s your name?</string>
     <string name="name_screen_button">Let\'s go!</string>
     <string name="join_us_screen_title">Hello,</string>
-    <string name="join_us_screen_message">Shh! My pirate friend told me there is hidden treasurer! Treasure? Yes, treasure! Want to join us on an adventure?!</string>
-    <string name="join_us_screen_button">Continue</string>
+    <string name="join_us_screen_message">Shh! My pirate friend told me there is hidden treasure! Treasure? Yes, treasure! Want to join us on an adventure?!</string>
+    <string name="join_us_screen_button">Yes - continue</string>
     <string name="greetings_screen_title">GREETINGS</string>
-    <string name="greetings_screen_message">Find all the pieces of the map.&#13;&#10;&#13;&#10; If you get all the questions correct you
+    <string name="greetings_screen_message">Find all the pieces of the map.&#13;&#10;&#13;&#10; If you get 80% of the questions correct you
         \'ll get one step closer to the treasurer!</string>
     <string name="greetings_screen_button">Let\'s start!</string>
     <string name="writing_intro_screen_button">Writing</string>
