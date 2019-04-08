@@ -167,7 +167,7 @@ public class ModuleQuestions extends Application {
                 "Going to the toilet on a ship is",
                 "easy in good weather.", "difficult for all pirates.", "tricky only in bad weather.","difficult for all pirates", "", false, 20, 60 ));
         readingQuestions.add(new ModuleQuestions("ReadingQ5", "Reading", "It's not all plain sailing on a pirate ship. Some of the time you will have to do battle with other large, hairy pirates with long swords, huge guns and very loud cannons. This could be extremely dangerous — deadly even! \n\n" + "" +
-                "The words plain sailing mean pirate ships",
+                "The words plain sailing means pirate ships",
                 "are not easy to sail", "decorated beautifully", "can be dull and boring","are not easy to sail", "", false ,20, 60));
 
         return readingQuestions;
