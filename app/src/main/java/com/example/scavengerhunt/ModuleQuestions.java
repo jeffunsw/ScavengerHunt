@@ -154,21 +154,21 @@ public class ModuleQuestions extends Application {
     // Reading Questions
     public static ArrayList<ModuleQuestions> getReadingQuestions() {
         ArrayList<ModuleQuestions> readingQuestions = new ArrayList<>();
-        readingQuestions.add(new ModuleQuestions("ReadingQ1", "Reading", "Have you ever thought about being a pirate? You may have read about pirates in stories and thought that it would be a great life. Pirates sail all day and never have to go to school. But think again! A pirate's life may not be as much fun as you think.\n\n" +
-                "The writer thinks being a pirate would be ",
-                "full of problems", "fun but dangerous", "better than going to school","full of problems", "", false, 20, 60 ));
-        readingQuestions.add(new ModuleQuestions("ReadingQ2", "Reading", "Food is not easy to find at sea. There are no refrigerators onboard so you can forget about eating fresh food. Meat goes bad after just a few days. Dry food like flour and bread has weevils and other nasty creatures crawling inside. Imagine eating a sandwich full of insects or meat served with maggots.\n\n" +
+        readingQuestions.add(new ModuleQuestions("ReadingQ1", "Reading", "Shiver me timbers! You are not the only pirate on the quest to find the treasurer! There is also Pirate Jack, Pirate Bonny, Private Low and Private Jake.\n\n" +
+                "How many other pirates are trying to find the treasurer? ",
+                "4", "I'm the only pirate", "2","4", "", false, 20, 60 ));
+        readingQuestions.add(new ModuleQuestions("ReadingQ2", "Reading", "Pirate ships come in many different shapes and sizes. The types of ships used by pirates depend on the country they are from or what period of time they were a pirate. \n\n" + "" +
+                "Which of the following about pirate ships are false:",
+                "are always black", "come in different sizes", "depend on the country they are from","are always black", "", false ,20, 60));
+        readingQuestions.add(new ModuleQuestions("ReadingQ3", "Reading", "On pirate ships, food onbaord is difficult because there are no fridges or electricity. Meat goes bad after just a few days. Dry food like flour and bread has weevils and other nasty creatures crawling inside.\n\n" +
                 "Weevils can be found in",
                 "flour", "meat", "fresh fruit","flour", "", false, 20, 60 ));
-        readingQuestions.add(new ModuleQuestions("ReadingQ3", "Reading", "Pirates' hammocks are often hung over barrels of stored food. That's the perfect place for rats and mice to live. If you become a pirate you could wake up each morning sharing your bed with a few friendly rodents.\n\n" +
+        readingQuestions.add(new ModuleQuestions("ReadingQ4", "Reading", "Pirates' hammocks are often hung over barrels of stored food which is the perfect place for rats and mice to live. Being a pirate means you could be sharing your bed with a few friendly rodents.\n\n" +
                 "The writer uses the words a few friendly rodents to ",
                 "show that only a few are good", "make an awful thing sound not so bad", "make you believe they are good pets","make an awful thing sound not so bad", "", false, 20, 40 ));
-        readingQuestions.add(new ModuleQuestions("ReadingQ4", "Reading", "Going to the toilet is not that easy either! Over the side of the ship is the only place for this. Rough weather makes this really tricky, even for the most experienced sailor. \n\n " +
-                "Going to the toilet on a ship is",
-                "easy in good weather.", "difficult for all pirates.", "tricky only in bad weather.","difficult for all pirates", "", false, 20, 60 ));
-        readingQuestions.add(new ModuleQuestions("ReadingQ5", "Reading", "It's not all plain sailing on a pirate ship. Some of the time you will have to do battle with other large, hairy pirates with long swords, huge guns and very loud cannons. This could be extremely dangerous — deadly even! \n\n" + "" +
-                "The words plain sailing means pirate ships",
-                "are not easy to sail", "decorated beautifully", "can be dull and boring","are not easy to sail", "", false ,20, 60));
+        readingQuestions.add(new ModuleQuestions("ReadingQ5", "Reading", "It's not all plain sailing on a pirate ship. Sometimes  you have to battle with other pirates with long swords, huge guns and  loud cannons. This could be extremely dangerous — deadly even! \n\n" +
+                "The words plain sailing means  that pirate ",
+                "there are challenges on a pirate ship", "pirate ships are decorated beautifully", "a pirate's life is boring","there are challenges on a pirate ship", "", false, 20, 60 ));
 
         return readingQuestions;
     }
