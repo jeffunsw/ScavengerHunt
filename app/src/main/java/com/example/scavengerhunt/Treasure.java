@@ -20,7 +20,7 @@ public class Treasure extends AppCompatActivity {
     public void showVideo(View view) {
 
         // Create intent with URI & start activity
-        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.youtube.com/watch?v=QYh6mYIJG2Y"));
+        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://youtu.be/nh4fy0fVkXM?t=135"));
         startActivity(browserIntent);
     }
 }
