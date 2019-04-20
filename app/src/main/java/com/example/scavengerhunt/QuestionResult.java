@@ -26,6 +26,7 @@ public class QuestionResult extends AppCompatActivity {
         String retrieveCorrectAnswer = intent.getStringExtra("correctAnswer");
         String retrieveQuestion = intent.getStringExtra("question");
         String retrieveResult = intent.getStringExtra("result");
+        Integer retrieveQuestionSize = intent.getExtras().getInt("questionSize");
 
         if (retrieveResult.equals("Correct!")) {
             rl.setBackgroundColor(Color.parseColor("#5CAD46"));
@@ -69,6 +70,7 @@ public class QuestionResult extends AppCompatActivity {
 
         // Change XML elements according to intent
         question.setText(retrieveQuestion);
+        question.setTextSize(retrieveQuestionSize);
         module.setText(retrieveModule.toUpperCase());
         answer.setText(retrieveCorrectAnswer);
         result.setText(retrieveResult);

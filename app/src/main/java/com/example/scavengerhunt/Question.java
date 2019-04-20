@@ -66,6 +66,7 @@ public class Question extends AppCompatActivity {
         String retrieveAnswer = intent.getStringExtra(type);
         String retrieveModule = intent.getStringExtra("module");
         String retrieveQuestion = intent.getStringExtra("question");
+        Integer retrieveQuestionSize = intent.getExtras().getInt("questionSize");
 
         // Create new intent for Question Result
         Intent questionIntent = new Intent(this, QuestionResult.class);
@@ -74,6 +75,7 @@ public class Question extends AppCompatActivity {
         questionIntent.putExtra("module", retrieveModule);
         questionIntent.putExtra("correctAnswer", retrieveCorrectAnswer);
         questionIntent.putExtra("question", retrieveQuestion);
+        questionIntent.putExtra("questionSize", retrieveQuestionSize);
 
         // Grab the game progress data
         GameProgress mApp = ((GameProgress)getApplicationContext());
